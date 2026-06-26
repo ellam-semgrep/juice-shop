@@ -29,7 +29,7 @@ trainings, awareness demos, CTFs and as a guinea pig for security tools! Juice S
 entire
 [OWASP Top Ten](https://owasp.org/www-project-top-ten) along with many other security flaws found in real-world
 applications!
-
+  
 ![Juice Shop Screenshot Slideshow](screenshots/slideshow.gif)
 
 For a detailed introduction, full list of features and architecture overview please visit the official project page:
