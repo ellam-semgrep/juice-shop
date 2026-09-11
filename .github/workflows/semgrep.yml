@@ -23,4 +23,6 @@ jobs:
       image: semgrep/semgrep
     steps:
     - uses: actions/checkout@v6
+      with:
+        fetch-depth: 0
     - run: semgrep ci --verbose
