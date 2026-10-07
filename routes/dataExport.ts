@@ -30,14 +30,14 @@ export function dataExport () {
         }
 
         try {
-          orders = await db.ordersCollection.find({ email: updatedEmail })
+          orders = await db.ordersCollection.find({ email: String(updatedEmail) })
         } catch (error) {
           next(new Error(`Error retrieving orders for ${updatedEmail}`))
           return
         }
 
         try {
-          reviews = await db.reviewsCollection.find({ author: email })
+          reviews = await db.reviewsCollection.find({ author: String(email) })
         } catch (error) {
           next(new Error(`Error retrieving reviews for ${updatedEmail}`))
           return
